@@ -92,7 +92,7 @@ fs.open('activity/' + act_name+"/html/index.html","w",0644,function(e,fd){
 	    '	<meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no" />\n'+
 	    '	<meta name="format-detection" content="telephone=no">\n'+
 	    '	<title>{{name}}</title>\n'+
-	    '	<!-- build:css(dist) css/main.css -->\n'+
+	    '	<!-- build:css(dist) ../css/main.css -->\n'+
 	    '	<link rel="stylesheet" href="../css/index.css">\n'+
 	    '	<link rel="stylesheet" href="../css/media.css">\n'+
 	    '	<link rel="stylesheet" href="../css/animation.css">\n'+
@@ -102,7 +102,7 @@ fs.open('activity/' + act_name+"/html/index.html","w",0644,function(e,fd){
 		'<body>\n'+
 		'</body>\n'+
 		'<!-- build:js({dist}) ../js/lib/fastclick-jquery.js -->\n'+
-		'<script src="../../lib/fastclick-jquery.js" type="text/javascript" charset="utf-8"></script>\n'+
+		'<script src="../js/fastclick-jquery.js" type="text/javascript" charset="utf-8"></script>\n'+
 		'<!-- endbuild -->\n'+
 		'<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>\n'+
 		'</html>';
@@ -130,7 +130,7 @@ fs.open('activity/' + act_name+"/html/index.html","w",0644,function(e,fd){
 	    '	</script>\n';
 	    if(mode === 'multi') {
 	    	_adaptjs = '<!-- build:js({dist}) ../js/adapt.js -->\n'+
-	    	'<script src="../../lib/adapt.js" type="text/javascript" charset="utf-8"></script>\n' +
+	    	'<script src="../js/adapt.js" type="text/javascript" charset="utf-8"></script>\n' +
 	    	'<!-- endbuild -->'
 	    }
 	var data = {"name":act_name,"adaptjs":_adaptjs};
