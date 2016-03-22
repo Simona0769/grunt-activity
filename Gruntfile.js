@@ -314,6 +314,12 @@ module.exports = function(grunt) {
 					cwd: '<%= config.activity %>/<%= config.actName %>',
 					dest: '<%= config.activity %>/<%= config.actName %>/<%= config.dist %>',
 					src: '{,*/}*.html',
+				},{
+					expand: true,
+					dot: true,
+					cwd: './lib/vendor',
+					dest: '<%= config.activity %>/<%= config.actName %>/<%= config.dist %>/js/lib/vendor',
+					src: '{,*/}*.css',
 				}]
 			}
 		},
