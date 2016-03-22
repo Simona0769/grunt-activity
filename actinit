@@ -101,7 +101,7 @@ fs.open('activity/' + act_name+"/html/index.html","w",0644,function(e,fd){
 		'</head>\n'+
 		'<body>\n'+
 		'</body>\n'+
-		'<!-- build:js({dist}) js/fastclick-zepto.js -->\n'+
+		'<!-- build:js({dist}) ../js/lib/fastclick-jquery.js -->\n'+
 		'<script src="../../lib/fastclick-jquery.js" type="text/javascript" charset="utf-8"></script>\n'+
 		'<!-- endbuild -->\n'+
 		'<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>\n'+
