@@ -242,3 +242,24 @@ fs.open('activity/' + act_name+"/sass/animation.scss","w",0644,function(e,fd){
     })
 });
 
+//./sass/_variables.scss
+fs.open('activity/' + act_name+"/sass/_variables.scss","w",0644,function(e,fd){
+    if(e) throw e;
+    var _content = '@charset "UTF-8";'
+    fs.write(fd,_content,function(e){
+        if(e) throw e;
+        fs.closeSync(fd);
+    })
+});
+
+//./sass/_sprite.scss
+fs.open('activity/' + act_name+"/sass/_sprite.scss","w",0644,function(e,fd){
+    if(e) throw e;
+    var _content = '@charset "UTF-8";\n'+
+		'@import "../../../sass/func";';
+    fs.write(fd,_content,function(e){
+        if(e) throw e;
+        fs.closeSync(fd);
+    })
+});
+
